@@ -1,0 +1,51 @@
+REPORT COLUMNS
+
+Total_Contract = Contract_Income + All_Change_Orders
+
+Total_Budget = [Select Sum(BdgLin.TtlBdg) From BdgLin Where BdgLin.RecNum = {ActRec.RecNum}] + [Select Sum(PrmChg.CstAmt) From PrmChg Where PrmChg.Status = 1 and PrmChg.JobNum = {ActRec.RecNum} and prmchg.actper <= {endper[N]} and prmchg.postyr = {yearxx[N]}] + [Select Sum(PrmChg.CstAmt) From PrmChg Where PrmChg.Status = 1 and PrmChg.JobNum = {ActRec.RecNum} and prmchg.postyr < {yearxx[N]}]
+
+Estimated_Gross_Profit = (Total_Contract) - (Total_Budget)
+
+Contract_Revenue_Earned = IF(Under_Budget) THEN(Total_Contract) ELSE((((Direct_Job_Costs) + ((All_Job_Cost_Hours) * 0)) / (Total_Budget)) * ( Total_Contract))
+
+Direct_Job_Costs = Current_Yr_Costs + Prior_Yr_Costs
+
+Gross_Profit = IF(Under_Budget) THEN(Estimated_Gross_Profit) ELSE((((Direct_Job_Costs) + ((All_Job_Cost_Hours) * 0)) / (Total_Budget)) * ( Estimated_Gross_Profit))
+
+Total_Billed_to_Date = Invoices_Current_Yr + Invoices_Prior_Yr
+
+percent_budget_used = 100 * ((Direct_Job_Costs) + ((All_Job_Cost_Hours) * 0)) / (Total_Budget)
+
+Costs_and_Earnings_in_Excess_of_Billings = IF(Under_Budget) THEN(IF(((Total_Contract) - (Total_Billed_to_Date)) >= .01) THEN(Total_Contract - (Total_Billed_to_Date)) ELSE()) ELSE(IF(((((Direct_Job_Costs) + ((All_Job_Cost_Hours) * 0)) / (Total_Budget)) * ( Total_Contract) - (Total_Billed_to_Date)) >= .01) THEN((((Direct_Job_Costs) + ((All_Job_Cost_Hours) * 0)) / (Total_Budget)) * ( Total_Contract) - (Total_Billed_to_Date)) ELSE())
+
+Billings_in_Excess_of_Costs_and_Earnings = IF(Under_Budget) THEN(IF(((Total_Contract) - (Total_Billed_to_Date)) <= .01) THEN((Total_Contract) - (Total_Billed_to_Date)) ELSE()) ELSE(IF(((((Direct_Job_Costs) + ((All_Job_Cost_Hours) * 0)) / (Total_Budget)) * ( Total_Contract) - (Total_Billed_to_Date)) < .01) THEN((((Direct_Job_Costs) + ((All_Job_Cost_Hours) * 0)) / (Total_Budget)) * ( Total_Contract) - (Total_Billed_to_Date)) ELSE())
+
+Prior_Yr_Costs = [Select Sum(JobCst.Cstamt) from JobCst Where JobCst.Status = 1 And JobCst.JobNum = {ActRec.RecNum} and jobcst.postyr < {yearxx[N]}]
+
+Current_Yr_Earned_Revenue = Total_Billed_to_Date - actrec.lotprm
+
+Current_Yr_Costs = [Select Sum(JobCst.Cstamt) from JobCst Where JobCst.Status = 1 And JobCst.JobNum = {ActRec.RecNum} and jobcst.actprd <= {endper[N]} and jobcst.postyr = {yearxx[N]}]
+
+Current_Yr_Gross_Profit = IF(Under_Budget) THEN(Estimated_Gross_Profit - actrec.plnprc ) ELSE((((Direct_Job_Costs) + ((All_Job_Cost_Hours) * 0)) / (Total_Budget)) * ( Estimated_Gross_Profit) - actrec.plnprc)
+
+NON REPORT VARIABLES
+
+Under_Budget = ((Direct_Job_Costs) + ((All_Job_Cost_Hours) * 0)) / (Total_Budget) > 1
+
+All_Job_Cost_Hours = Job_Cost_Hours_Current_Yr + Job_Cost_Hours_Prior_Yr
+
+Job_Cost_Hours_Current_Yr = [Select Sum(JobCst.Csthrs) from JobCst Where JobCst.Status = 1 And JobCst.JobNum = {ActRec.RecNum} and jobcst.actprd <= {endper[N]} and jobcst.postyr = {yearxx[N]}]
+
+Job_Cost_Hours_Prior_Yr = [Select Sum(JobCst.Csthrs) from JobCst Where JobCst.Status = 1 And JobCst.JobNum = {ActRec.RecNum} and jobcst.postyr < {yearxx[N]}]
+
+All_Change_Orders = Change_Orders_Current_Yr + Change_Orders_Prior_Yr
+
+Change_Orders_Current_Yr = [Select Sum(PrmChg.AppAmt) From PrmChg Where PrmChg.Status = 1 And PrmChg.JobNum = {ActRec.RecNum} and prmchg.actper <= {endper[N]} and prmchg.postyr = {yearxx[N]}]
+
+Change_Orders_Prior_Yr = [Select Sum(PrmChg.AppAmt) From PrmChg Where PrmChg.Status = 1 And PrmChg.JobNum = {ActRec.RecNum} and prmchg.postyr < {yearxx[N]}]
+
+Contract_Income = [Select ActRec.CntRct From ActRec Where ActRec.RecNum = {ActRec.RecNum}]
+
+Invoices_Current_Yr = [Select Sum(AcrInv.InvTtl) From AcrInv Where AcrInv.Status < 5 And AcrInv.InvTyp = 1 And AcrInv.JobNum = {ActRec.RecNum} and acrinv.actper <= {endper[N]} and acrinv.postyr = {yearxx[N]}]
+
+Invoices_Prior_Yr = [Select Sum(AcrInv.InvTtl) From AcrInv Where AcrInv.Status < 5 And AcrInv.InvTyp = 1 And AcrInv.JobNum = {ActRec.RecNum} and acrinv.postyr < {yearxx[N]}]

@@ -1,0 +1,10 @@
+/* assets/css/variables.css */
+:root {
+    --border-color: #6b6b6b;
+    --b-rad-small: 9px;
+    --b-rad-med: 15px;
+    --b-rad-big: 24px;
+    --blue-accent: #007bff;
+    --red-accent: #9b1414;
+    --light-blue-background: #a7daec;
+}

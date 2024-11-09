@@ -1,0 +1,1376 @@
+# Copyright (C) 2024 BigTB
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Super Logistics 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/super-logistics\n"
+"POT-Creation-Date: 2024-05-03 18:47:26+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: wp-vue-i18n 1.1.4\n"
+
+#: core/Admin_Notice/Admin_Notice.php:33
+msgid "UPDATE REQUIRED"
+msgstr ""
+
+#: core/Admin_Notice/Admin_Notice.php:35
+msgid ""
+"WP Project Manager Pro is not working because you are using an old version "
+"of WP Project Manager Pro. Please update"
+msgstr ""
+
+#: core/Admin_Notice/Admin_Notice.php:37
+msgid "WP Project Manager Pro"
+msgstr ""
+
+#: core/Admin_Notice/Admin_Notice.php:39
+msgid "to >= v2.0.12"
+msgstr ""
+
+#: core/Admin_Notice/Admin_Notice.php:42
+msgid "to work with the latest version of WP Project Manager"
+msgstr ""
+
+#: core/Admin_Notice/Admin_Notice.php:45
+msgid "Update WP Project Manager Pro Now"
+msgstr ""
+
+#: core/Admin_Notice/Admin_Notice.php:171
+msgid "<h2>WP Project Manager Pro required version 2.0 or above.</span></h2>"
+msgstr ""
+
+#: core/Admin_Notice/Admin_Notice.php:172
+msgid "<p>To migrate version 2.0, Please read mmigration docs </p>"
+msgstr ""
+
+#: core/Admin_Notice/Admin_Notice.php:181
+msgid "Read Docs"
+msgstr ""
+
+#: core/Permissions/Access_Project.php:28 core/Permissions/Admin.php:15
+#: core/Permissions/Create_Discuss.php:19
+#: core/Permissions/Create_Milestone.php:18 core/Permissions/Create_Task.php:18
+#: core/Permissions/Create_Task_List.php:19 core/Permissions/Delete_Task.php:27
+#: core/Permissions/Edit_Comment.php:31 core/Permissions/Edit_Discuss.php:30
+#: core/Permissions/Edit_File.php:29 core/Permissions/Edit_Milestone.php:30
+#: core/Permissions/Edit_Task.php:32 core/Permissions/Edit_Task_List.php:30
+#: core/Permissions/Manager.php:15
+#: core/Permissions/Project_Manage_Capability.php:18
+#: core/Permissions/Project_Manage_Capability.php:29
+#: core/Permissions/Project_Settings_Page_Access.php:15
+#: core/Permissions/Project_Settings_Page_Access.php:26
+msgid "You have no permission."
+msgstr ""
+
+#: core/Permissions/Complete_Task.php:36
+msgid "You have no permission to change task status."
+msgstr ""
+
+#: core/Permissions/Create_File.php:18
+msgid "You have no permission to create message."
+msgstr ""
+
+#: core/Permissions/Project_Create_Capability.php:15
+msgid "You have no permission to create project."
+msgstr ""
+
+#: core/Promotions/Offers.php:52
+msgid "<strong>%s</strong>"
+msgstr ""
+
+#: core/Promotions/Offers.php:55 core/Promotions/Offers.php:58
+#: core/Promotions/Offers.php:134
+msgid "%s"
+msgstr ""
+
+#: core/Promotions/Offers.php:176 core/Promotions/Wedevs_Promotion.php:190
+msgid "Invalid nonce"
+msgstr ""
+
+#: core/Promotions/Offers.php:181 core/Promotions/Wedevs_Promotion.php:194
+msgid "You have no permission to do that"
+msgstr ""
+
+#: core/Promotions/Wedevs_Promotion.php:82
+msgid "Learn More &rarr;"
+msgstr ""
+
+#: core/Upgrades/Upgrade.php:152
+msgid "WP Project Manager Data Update Required"
+msgstr ""
+
+#: core/Upgrades/Upgrade.php:153
+msgid "&#8211; Please click the button below to update to the latest version."
+msgstr ""
+
+#: core/Upgrades/Upgrade.php:157
+msgid "Run the Update"
+msgstr ""
+
+#: core/Upgrades/Upgrade.php:158
+msgid "Read More"
+msgstr ""
+
+#: core/Upgrades/Upgrade.php:166
+msgid ""
+"It is strongly recommended that you backup your database before proceeding. "
+"Are you sure you wish to run the updater now?"
+msgstr ""
+
+#: core/Upgrades/Upgrade_2_2.php:33
+msgid "Inbox"
+msgstr ""
+
+#: core/Upgrades/Upgrade_2_2.php:34
+msgid ""
+"This is a system default task list. Any task without an assigned tasklist "
+"will appear here."
+msgstr ""
+
+#: core/User_Profile/Profile_Update.php:56
+msgid "WP Project Manager"
+msgstr ""
+
+#: core/User_Profile/Profile_Update.php:83
+msgid "Capability"
+msgstr ""
+
+#: core/User_Profile/Profile_Update.php:89
+msgid "— No capability for this user —"
+msgstr ""
+
+#: core/WP/Enqueue_Scripts.php:73
+msgid "Allowed Files"
+msgstr ""
+
+#: core/WP/Frontend.php:168
+msgid "Temporary deactivation"
+msgstr ""
+
+#: core/WP/Frontend.php:169
+msgid "Are you facing any problem?"
+msgstr ""
+
+#: core/WP/Frontend.php:175
+msgid "Found an Error"
+msgstr ""
+
+#: core/WP/Frontend.php:176
+msgid ""
+"Please tell us more about the error. We'll reach you with the possible "
+"solution."
+msgstr ""
+
+#: core/WP/Frontend.php:182
+msgid "No proper documentation"
+msgstr ""
+
+#: core/WP/Frontend.php:183
+msgid "Could you tell us a bit more?"
+msgstr ""
+
+#: core/WP/Frontend.php:224
+msgid "Every %d Minutes PM schedule"
+msgstr ""
+
+#: core/WP/Frontend.php:262
+msgid "Get Pro"
+msgstr ""
+
+#: core/WP/Frontend.php:265
+msgid "Settings"
+msgstr ""
+
+#: core/WP/Frontend.php:266
+msgid "Documentation"
+msgstr ""
+
+#: core/WP/Frontend.php:313 core/WP/Frontend.php:326
+msgid "Create New Task"
+msgstr ""
+
+#: core/WP/Frontend.php:342 views/project-switch/project-switch.php:5
+msgid "Jump to a project"
+msgstr ""
+
+#: db/seeds/RoleTableSeeder.php:22
+msgid "Manager"
+msgstr ""
+
+#: db/seeds/RoleTableSeeder.php:24
+msgid "Manager is a person who manages the project."
+msgstr ""
+
+#: db/seeds/RoleTableSeeder.php:32
+msgid "Co-Worker"
+msgstr ""
+
+#: db/seeds/RoleTableSeeder.php:34
+msgid "Co-worker is person who works under a project."
+msgstr ""
+
+#: languages/wedevs-project-manager.php:3
+msgid "Click Me"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:4
+msgid "Submit"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:5
+msgid "Select Color"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:6
+msgid "Clear"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:7
+msgid "Close"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:8
+msgid "Attach"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:9
+msgid "Notify user"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:10
+msgid "Assign to"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:11
+msgid "Search User"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:12
+msgid "Post Comment"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:13
+msgid "Update Comment"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:14 views/emails/html/new-message.php:60
+#: views/emails/html/update-message.php:60
+msgid "Discussion"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:15
+#: views/assets/src/components/settings/task-type-item.vue:12
+msgid "Edit"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:16
+#: views/assets/src/components/settings/task-type-item.vue:14
+msgid "Delete"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:17
+msgid "Add a comment"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:18
+#: views/assets/src/components/settings/task-type-item.vue:58
+msgid "Are you sure?"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:19
+#: views/assets/src/components/common/dropdown-menu.vue:12
+msgid "Menu 1"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:20
+#: views/assets/src/components/common/dropdown-menu.vue:21
+msgid "Menu 2"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:21
+#: views/assets/src/components/common/file-uploader.vue:17
+msgid "To attach"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:22
+#: views/assets/src/components/common/file-uploader.vue:21
+msgid "from your computer."
+msgstr ""
+
+#: languages/wedevs-project-manager.php:23
+#: views/assets/src/components/common/file-uploader.vue:72
+msgid "select files"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:24
+#: views/emails/html/complete-task.php:87 views/emails/html/new-project.php:48
+#: views/emails/html/new-task.php:79 views/emails/html/update-project.php:49
+#: views/emails/html/update-task.php:80
+msgid "Project"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:25
+msgid "Loading projects"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:26
+msgid "In List"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:27
+msgid "Loading task lists"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:28
+#: views/emails/html/complete-task.php:56 views/emails/html/new-task.php:48
+#: views/emails/html/update-task.php:48
+msgid "Task"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:29
+msgid "You have no permission to create task for this project"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:30
+msgid "Select a project"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:31
+msgid "Project Actions"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:32
+msgid "Complete"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:33
+msgid "Restore"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:34
+msgid "Project Description"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:35
+msgid "No Description Found!"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:36
+#: views/assets/src/components/common/menu.vue:19
+msgid "Task Lists"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:37
+msgid "Task Filter"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:38
+#: views/project-switch/task-creating.php:6
+msgid "Task title"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:39
+msgid "Task list name"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:40
+msgid "Type task list name"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:41
+msgid "No task lists found."
+msgstr ""
+
+#: languages/wedevs-project-manager.php:42
+msgid "Status"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:43
+msgid "Completed"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:44
+msgid "On-going"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:45
+msgid "Assigned to"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:46 views/emails/html/new-task.php:68
+#: views/emails/html/update-task.php:68
+msgid "Due Date"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:47
+msgid "Clear Filter"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:48
+#: views/assets/src/components/settings/new-task-type-form.vue:26
+#: views/assets/src/components/settings/new-task-type-form.vue:35
+msgid "Cancel"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:49
+msgid "Apply Filter"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:50
+msgid "All"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:51
+msgid "Any"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:52
+msgid "Over Due"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:53
+msgid "Today"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:54
+msgid "Less Than 1 week"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:55
+#: views/assets/src/components/common/loading-animation.vue:21
+msgid "Loading..."
+msgstr ""
+
+#: languages/wedevs-project-manager.php:56
+#: views/assets/src/components/common/menu.vue:26
+msgid "Overview"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:57
+#: views/assets/src/components/common/menu.vue:33
+msgid "Activities"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:58
+#: views/assets/src/components/common/menu.vue:40
+msgid "Discussions"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:59
+#: views/assets/src/components/common/menu.vue:47
+msgid "Milestones"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:60
+#: views/assets/src/components/common/menu.vue:61
+msgid "Files"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:61
+#: views/assets/src/components/common/menu.vue:174
+msgid "More"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:62
+msgid "Notify users"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:63
+msgid "Select all"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:64
+msgid "Title"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:65
+msgid "Add New"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:66
+msgid "Choose task type"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:67
+msgid "Write a comment..."
+msgstr ""
+
+#: languages/wedevs-project-manager.php:68
+#: views/assets/src/components/settings/email.vue:7
+#: views/assets/src/components/settings/header.vue:9
+msgid "E-Mail Settings"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:69
+#: views/assets/src/components/settings/email.vue:12
+msgid "From Email"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:70
+#: views/assets/src/components/settings/email.vue:20
+msgid "Links in the Email"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:71
+#: views/assets/src/components/settings/email.vue:25
+msgid "Link to Backend"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:72
+#: views/assets/src/components/settings/email.vue:28
+msgid ""
+"Select where do you want to take the user. Notification emails contain "
+"links."
+msgstr ""
+
+#: languages/wedevs-project-manager.php:73
+#: views/assets/src/components/settings/email.vue:35
+msgid "E-Mail Type"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:74
+#: views/assets/src/components/settings/email.vue:39
+msgid "HTML Mail"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:75
+#: views/assets/src/components/settings/email.vue:40
+msgid "Plain Text"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:76
+#: views/assets/src/components/settings/email.vue:46
+msgid "Send email via Bcc"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:77
+#: views/assets/src/components/settings/email.vue:52
+msgid "Enable Bcc"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:78
+#: views/assets/src/components/settings/email.vue:82
+#: views/assets/src/components/settings/general.vue:120
+#: views/assets/src/components/settings/pusher.vue:69
+#: views/assets/src/components/settings/usersmap.vue:48
+msgid "Save Changes"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:79
+#: views/assets/src/components/settings/general.vue:7
+#: views/assets/src/components/settings/header.vue:5
+msgid "General Settings"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:80
+#: views/assets/src/components/settings/general.vue:12
+msgid "File Upload Limit"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:81
+#: views/assets/src/components/settings/general.vue:16
+msgid "File Size in Megabytes. e.g: 2"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:82
+#: views/assets/src/components/settings/general.vue:21
+msgid "Projects Per Page"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:83
+#: views/assets/src/components/settings/general.vue:25
+msgid "-1 for unlimited"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:84
+#: views/assets/src/components/settings/general.vue:31
+msgid "Task Lists Per Page"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:85
+#: views/assets/src/components/settings/general.vue:39
+msgid "Incomplete Tasks Per Page"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:86
+#: views/assets/src/components/settings/general.vue:47
+msgid "Completed Tasks Per Page"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:87
+#: views/assets/src/components/settings/general.vue:55
+msgid "Project Managing Capability"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:88
+#: views/assets/src/components/settings/general.vue:68
+msgid "Select the user roles who can see and manage all projects."
+msgstr ""
+
+#: languages/wedevs-project-manager.php:89
+#: views/assets/src/components/settings/general.vue:74
+msgid "Project Creation Capability"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:90
+#: views/assets/src/components/settings/general.vue:85
+msgid "Select the user roles who can create projects."
+msgstr ""
+
+#: languages/wedevs-project-manager.php:91
+#: views/assets/src/components/settings/header.vue:12
+msgid "Pusher"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:92
+#: views/assets/src/components/settings/header.vue:16
+msgid "Task Type"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:93
+#: views/assets/src/components/settings/new-task-type-form.vue:6
+msgid "Type Name"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:94
+#: views/assets/src/components/settings/new-task-type-form.vue:9
+msgid "Type name..."
+msgstr ""
+
+#: languages/wedevs-project-manager.php:95
+#: views/assets/src/components/settings/new-task-type-form.vue:15
+#: views/assets/src/components/settings/task-types.vue:23
+#: views/emails/html/complete-task.php:95 views/emails/html/update-task.php:88
+msgid "Description"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:96
+#: views/assets/src/components/settings/new-task-type-form.vue:18
+msgid "Description (optional)"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:97
+#: views/assets/src/components/settings/new-task-type-form.vue:28
+msgid "Update"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:98
+#: views/assets/src/components/settings/new-task-type-form.vue:37
+msgid "Create type"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:99
+#: views/assets/src/components/settings/new-task-type-form.vue:187
+msgid "Type name required!"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:100
+#: views/assets/src/components/settings/pusher.vue:7
+msgid "Pusher Settings"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:101
+#: views/assets/src/components/settings/pusher.vue:12
+msgid "App ID"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:102
+#: views/assets/src/components/settings/pusher.vue:20
+msgid "App Key"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:103
+#: views/assets/src/components/settings/pusher.vue:28
+msgid "secret"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:104
+#: views/assets/src/components/settings/pusher.vue:37
+msgid "Cluster"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:105
+#: views/assets/src/components/settings/task-types.vue:10
+msgid "+ Create New Task Type"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:106
+#: views/assets/src/components/settings/task-types.vue:22
+msgid "Name"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:107
+#: views/assets/src/components/settings/task-types.vue:24
+msgid "Action"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:108
+#: views/assets/src/components/settings/usersmap.vue:6
+msgid "Users Map to Github & Bitbucket"
+msgstr ""
+
+#: languages/wedevs-project-manager.php:109
+#: views/assets/src/helpers/mixin/mixin.js:1053
+msgid "Are you sure to delete this project?"
+msgstr ""
+
+#: libs/functions.php:1006
+msgid "Project Manager"
+msgstr ""
+
+#: libs/functions.php:1250
+msgid "PM Admin"
+msgstr ""
+
+#: libs/functions.php:1251
+msgid "PM Manager"
+msgstr ""
+
+#: src/Role/Validators/Create_Role.php:10
+#: src/Role/Validators/Update_Role.php:10
+msgid "Role title is required."
+msgstr ""
+
+#: src/Role/Validators/Update_Role.php:11
+msgid "Role ID is required."
+msgstr ""
+
+#: src/Role/Validators/Update_Role.php:12
+msgid "Role ID must be greater than zero"
+msgstr ""
+
+#: src/User/Controllers/User_Controller.php:172
+msgid "You have no permission to create/update user meta."
+msgstr ""
+
+#: texts/activities.php:6
+msgid "%1$s has created a project titled as %2$s."
+msgstr ""
+
+#: texts/activities.php:10
+msgid "%1$s has updated project title from \"%2$s\" to \"%3$s\"."
+msgstr ""
+
+#: texts/activities.php:14
+msgid "%1$s has updated %2$s project description."
+msgstr ""
+
+#: texts/activities.php:18
+msgid "%1$s has updated project status from \"%2$s\" to \"%3$s\"."
+msgstr ""
+
+#: texts/activities.php:22
+msgid "%1$s has updated project budget from \"%2$s\" to \"%3$s\"."
+msgstr ""
+
+#: texts/activities.php:26
+msgid "%1$s has updated project pay rate from \"%2$s\" to \"%3$s\"."
+msgstr ""
+
+#: texts/activities.php:30
+msgid "%1$s has updated project est completion date from \"%2$s\" to \"%3$s\"."
+msgstr ""
+
+#: texts/activities.php:34
+msgid "%1$s has updated project color code from \"%2$s\" to \"%3$s\"."
+msgstr ""
+
+#: texts/activities.php:40
+msgid "%1$s has created a discussion board titled as %2$s."
+msgstr ""
+
+#: texts/activities.php:44
+msgid "%1$s has deleted a discussion board titled as %2$s."
+msgstr ""
+
+#: texts/activities.php:48
+msgid "%1$s has updated the title of a discussion board from \"%2$s\" to \"%3$s\"."
+msgstr ""
+
+#: texts/activities.php:52
+msgid "%1$s has updated the description of a discussion board, %2$s."
+msgstr ""
+
+#: texts/activities.php:56
+msgid "%1$s has updated the order of a discussion board, %2$s."
+msgstr ""
+
+#: texts/activities.php:60
+msgid "%1$s has updated the status of a discussion board, %2$s."
+msgstr ""
+
+#: texts/activities.php:66
+msgid "%1$s has created a task list titled as %2$s."
+msgstr ""
+
+#: texts/activities.php:70
+msgid "%1$s has deleted a task list titled as %2$s."
+msgstr ""
+
+#: texts/activities.php:74
+msgid "%1$s has updated the title of a task list from \"%2$s\" to \"%3$s\"."
+msgstr ""
+
+#: texts/activities.php:78
+msgid "%1$s has updated the description of a task list, %2$s."
+msgstr ""
+
+#: texts/activities.php:82
+msgid "%1$s has updated the order of a task list, %2$s."
+msgstr ""
+
+#: texts/activities.php:86
+msgid "%1$s has archived a task list, %2$s."
+msgstr ""
+
+#: texts/activities.php:90
+msgid "%1$s has restored a task list, %2$s."
+msgstr ""
+
+#: texts/activities.php:96
+msgid "%1$s has created a milestone, %2$s."
+msgstr ""
+
+#: texts/activities.php:100
+msgid "%1$s has deleted a milestone, %2$s."
+msgstr ""
+
+#: texts/activities.php:104
+msgid "%1$s has updated the title of a milestone from \"%2$s\" to \"%3$s\"."
+msgstr ""
+
+#: texts/activities.php:108
+msgid "%1$s has updated the description of a milestone, %2$s."
+msgstr ""
+
+#: texts/activities.php:112
+msgid "%1$s has updated the order of a milestone, %2$s."
+msgstr ""
+
+#: texts/activities.php:116
+msgid "%1$s has updated the status of a milestone, %2$s."
+msgstr ""
+
+#: texts/activities.php:122
+msgid "%1$s has created a task, %2$s."
+msgstr ""
+
+#: texts/activities.php:126
+msgid "%1$s has deleted a task, %2$s."
+msgstr ""
+
+#: texts/activities.php:130
+msgid "%1$s has updated the title of a task from \"%2$s\" to \"%3$s\"."
+msgstr ""
+
+#: texts/activities.php:134
+msgid "%1$s has updated the description of a task, %2$s."
+msgstr ""
+
+#: texts/activities.php:138
+msgid "%1$s has updated the estimation of a task, %2$s, from %3$s to %4$s."
+msgstr ""
+
+#: texts/activities.php:142
+msgid "%1$s has updated the start date of a task, %2$s, from %3$s to %4$s."
+msgstr ""
+
+#: texts/activities.php:146
+msgid "%1$s has updated the due date of a task, %2$s, from %3$s to %4$s."
+msgstr ""
+
+#: texts/activities.php:150
+msgid "%1$s has updated the complexity of a task, %2$s, from %3$s to %4$s."
+msgstr ""
+
+#: texts/activities.php:154
+msgid "%1$s has updated the priority of a task, %2$s, from %3$s to %4$s."
+msgstr ""
+
+#: texts/activities.php:158
+msgid "%1$s has updated the payable status of a task, %2$s, from %3$s to %4$s."
+msgstr ""
+
+#: texts/activities.php:162
+msgid "%1$s has updated the recurrency of a task, %2$s, from %3$s to %4$s."
+msgstr ""
+
+#: texts/activities.php:166
+msgid "%1$s has updated the status of a task, %2$s, from %3$s to %4$s."
+msgstr ""
+
+#: texts/activities.php:172
+msgid "%1$s has commented on a task, %2$s."
+msgstr ""
+
+#: texts/activities.php:176
+msgid "%1$s has updated a comment on a task, %2$s."
+msgstr ""
+
+#: texts/activities.php:180
+msgid "%1$s has deleted a comment on a task, %2$s."
+msgstr ""
+
+#: texts/activities.php:184
+msgid "%1$s has replied a comment on a task, %2$s"
+msgstr ""
+
+#: texts/activities.php:188
+msgid "%1$s has updated a reply comment on a task, %2$s."
+msgstr ""
+
+#: texts/activities.php:192
+msgid "%1$s has deleted a reply comment on a task, %2$s."
+msgstr ""
+
+#: texts/activities.php:198
+msgid "%1$s has commented on a task list, %2$s."
+msgstr ""
+
+#: texts/activities.php:202
+msgid "%1$s has updated a comment on a task list, %2$s."
+msgstr ""
+
+#: texts/activities.php:206
+msgid "%1$s has deleted a comment on a task list, %2$s."
+msgstr ""
+
+#: texts/activities.php:210
+msgid "%1$s has replied a comment on a task list, %2$s"
+msgstr ""
+
+#: texts/activities.php:214
+msgid "%1$s has updated a reply comment on a task list, %2$s."
+msgstr ""
+
+#: texts/activities.php:218
+msgid "%1$s has deleted a reply comment on a task list, %2$s."
+msgstr ""
+
+#: texts/activities.php:224
+msgid "%1$s has commented on a discussion board, %2$s."
+msgstr ""
+
+#: texts/activities.php:228
+msgid "%1$s has updated a comment on a discussion board, %2$s."
+msgstr ""
+
+#: texts/activities.php:232
+msgid "%1$s has deleted a comment on a discussion board, %2$s."
+msgstr ""
+
+#: texts/activities.php:236
+msgid "%1$s has replied a comment on a discussion board, %2$s"
+msgstr ""
+
+#: texts/activities.php:240
+msgid "%1$s has updated a reply comment on a discussion board, %2$s."
+msgstr ""
+
+#: texts/activities.php:244
+msgid "%1$s has deleted a reply comment on a discussion board, %2$s."
+msgstr ""
+
+#: texts/activities.php:250
+msgid "%1$s has commented on a milestone, %2$s."
+msgstr ""
+
+#: texts/activities.php:254
+msgid "%1$s has updated a comment on a milestone, %2$s."
+msgstr ""
+
+#: texts/activities.php:258
+msgid "%1$s has deleted a comment on a milestone, %2$s."
+msgstr ""
+
+#: texts/activities.php:262
+msgid "%1$s has replied a comment on a milestone, %2$s"
+msgstr ""
+
+#: texts/activities.php:266
+msgid "%1$s has updated a reply comment on a milestone, %2$s."
+msgstr ""
+
+#: texts/activities.php:270
+msgid "%1$s has deleted a reply comment on a milestone, %2$s."
+msgstr ""
+
+#: texts/activities.php:276
+msgid "%1$s has commented on the project, %2$s."
+msgstr ""
+
+#: texts/activities.php:280
+msgid "%1$s has updated a comment on the project, %2$s."
+msgstr ""
+
+#: texts/activities.php:284
+msgid "%1$s has deleted a comment on the project, %2$s."
+msgstr ""
+
+#: texts/activities.php:288
+msgid "%1$s has replied a comment on the project, %2$s"
+msgstr ""
+
+#: texts/activities.php:292
+msgid "%1$s has updated a reply comment on the project, %2$s."
+msgstr ""
+
+#: texts/activities.php:296
+msgid "%1$s has deleted a reply comment on the project, %2$s."
+msgstr ""
+
+#: texts/activities.php:302
+msgid "%1$s has commented on a file, %2$s."
+msgstr ""
+
+#: texts/activities.php:306
+msgid "%1$s has updated a comment on a file, %2$s."
+msgstr ""
+
+#: texts/activities.php:310
+msgid "%1$s has deleted a comment on a file, %2$s."
+msgstr ""
+
+#: texts/activities.php:314
+msgid "%1$s has replied a comment on a file, %2$s"
+msgstr ""
+
+#: texts/activities.php:318
+msgid "%1$s has updated a reply comment on a file, %2$s."
+msgstr ""
+
+#: texts/activities.php:322
+msgid "%1$s has deleted a reply comment on a file, %2$s."
+msgstr ""
+
+#: texts/activities.php:328
+msgid "%1$s has duplicated project from, %2$s."
+msgstr ""
+
+#: texts/activities.php:332
+msgid "%1$s has duplicated list from, %2$s."
+msgstr ""
+
+#: texts/resource_types.php:5
+msgid "project"
+msgstr ""
+
+#: texts/resource_types.php:8
+msgid "discussion board"
+msgstr ""
+
+#: texts/resource_types.php:11
+msgid "task list"
+msgstr ""
+
+#: texts/resource_types.php:14
+msgid "task"
+msgstr ""
+
+#: texts/resource_types.php:17
+msgid "milestone"
+msgstr ""
+
+#: texts/resource_types.php:20
+msgid "comment"
+msgstr ""
+
+#: texts/resource_types.php:23
+msgid "file"
+msgstr ""
+
+#: texts/success_messages.php:6
+msgid "A new project has been created successfully."
+msgstr ""
+
+#: texts/success_messages.php:9
+msgid "A project has been updated successfully."
+msgstr ""
+
+#: texts/success_messages.php:12
+msgid "A project has been deleted successfully."
+msgstr ""
+
+#: texts/success_messages.php:16
+msgid "A new category has been created successfully."
+msgstr ""
+
+#: texts/success_messages.php:19
+msgid "A category has been updated successfully."
+msgstr ""
+
+#: texts/success_messages.php:22
+msgid "A category has been deleted successfully."
+msgstr ""
+
+#: texts/success_messages.php:25
+msgid "All the selected categories has been deleted successfully."
+msgstr ""
+
+#: texts/success_messages.php:29
+msgid "Successfully commented."
+msgstr ""
+
+#: texts/success_messages.php:32
+msgid "A comment has been updated successfully."
+msgstr ""
+
+#: texts/success_messages.php:35
+msgid "A comment has been deleted successfully."
+msgstr ""
+
+#: texts/success_messages.php:39
+msgid "A new discussion has been created successfully."
+msgstr ""
+
+#: texts/success_messages.php:42
+msgid "A discussion has been updated successfully."
+msgstr ""
+
+#: texts/success_messages.php:45
+msgid "A discussion has been deleted successfully."
+msgstr ""
+
+#: texts/success_messages.php:49
+msgid "A new milestone has been created successfully."
+msgstr ""
+
+#: texts/success_messages.php:52
+msgid "A milestone has been updated successfully."
+msgstr ""
+
+#: texts/success_messages.php:55
+msgid "A milestone has been deleted successfully."
+msgstr ""
+
+#: texts/success_messages.php:59
+msgid "A new task list has been created successfully."
+msgstr ""
+
+#: texts/success_messages.php:62
+msgid "A task list has been updated successfully."
+msgstr ""
+
+#: texts/success_messages.php:65
+msgid "A task list has been deleted successfully."
+msgstr ""
+
+#: texts/success_messages.php:69
+msgid "A new task has been created successfully."
+msgstr ""
+
+#: texts/success_messages.php:72
+msgid "A task has been updated successfully."
+msgstr ""
+
+#: texts/success_messages.php:75
+msgid "A task has been deleted successfully."
+msgstr ""
+
+#: texts/success_messages.php:78
+msgid "Settings has been changed successfully."
+msgstr ""
+
+#: texts/success_messages.php:81
+msgid "No elements found."
+msgstr ""
+
+#: texts/success_messages.php:84
+msgid "No projects found."
+msgstr ""
+
+#: texts/success_messages.php:87
+msgid "Task marked as done"
+msgstr ""
+
+#: texts/success_messages.php:90
+msgid "Task reopened"
+msgstr ""
+
+#: vendor/a5hleyrich/wp-background-processing/classes/wp-background-process.php:685
+msgid "Every Minute"
+msgstr ""
+
+#: vendor/a5hleyrich/wp-background-processing/classes/wp-background-process.php:687
+msgid "Every %d Minutes"
+msgstr ""
+
+#: views/emails/html/complete-task.php:36
+msgid " has re-open the task"
+msgstr ""
+
+#: views/emails/html/complete-task.php:38
+msgid " has completed the task"
+msgstr ""
+
+#: views/emails/html/complete-task.php:44 views/emails/html/new-task.php:36
+#: views/emails/html/update-task.php:35
+msgid "View this task"
+msgstr ""
+
+#: views/emails/html/complete-task.php:63 views/emails/html/new-task.php:55
+#: views/emails/html/update-task.php:55
+msgid "Assign To"
+msgstr ""
+
+#: views/emails/html/complete-task.php:76
+msgid "Date"
+msgstr ""
+
+#: views/emails/html/complete-task.php:97 views/emails/html/update-task.php:90
+msgid "No description found!"
+msgstr ""
+
+#: views/emails/html/complete-task.php:105 views/emails/html/new-task.php:96
+#: views/emails/html/update-task.php:98
+msgid "View Task"
+msgstr ""
+
+#: views/emails/html/complete-task.php:117 views/emails/html/new-task.php:108
+#: views/emails/html/update-task.php:110
+msgid "Collaborators"
+msgstr ""
+
+#: views/emails/html/footer.php:12
+msgid "Made by"
+msgstr ""
+
+#: views/emails/html/new-comment.php:36
+msgid " commented on "
+msgstr ""
+
+#: views/emails/html/new-comment.php:50 views/emails/html/update-comment.php:50
+msgid "View this comment"
+msgstr ""
+
+#: views/emails/html/new-comment.php:76 views/emails/html/new-message.php:69
+#: views/emails/html/new-project.php:57
+msgid "Created at"
+msgstr ""
+
+#: views/emails/html/new-comment.php:89 views/emails/html/update-comment.php:89
+msgid "Comment"
+msgstr ""
+
+#: views/emails/html/new-comment.php:116
+#: views/emails/html/update-comment.php:117
+msgid "Reply"
+msgstr ""
+
+#: views/emails/html/new-message.php:34
+msgid "start a new discussion"
+msgstr ""
+
+#: views/emails/html/new-message.php:47 views/emails/html/update-message.php:47
+msgid "View this discussion"
+msgstr ""
+
+#: views/emails/html/new-message.php:82 views/emails/html/update-message.php:82
+msgid "Details"
+msgstr ""
+
+#: views/emails/html/new-message.php:109
+#: views/emails/html/update-message.php:109
+msgid "View Discussion"
+msgstr ""
+
+#: views/emails/html/new-message.php:121
+#: views/emails/html/update-message.php:121
+msgid "Discussion Members"
+msgstr ""
+
+#: views/emails/html/new-project.php:34
+msgid "assigned a project to you"
+msgstr ""
+
+#: views/emails/html/new-project.php:36 views/emails/html/update-project.php:36
+msgid "View this project"
+msgstr ""
+
+#: views/emails/html/new-project.php:77
+msgid "You are assigned a project"
+msgstr ""
+
+#: views/emails/html/new-project.php:79
+msgid "by"
+msgstr ""
+
+#: views/emails/html/new-project.php:85 views/emails/html/update-project.php:85
+msgid "You can see the project by going here: "
+msgstr ""
+
+#: views/emails/html/new-project.php:96 views/emails/html/update-project.php:96
+msgid "View Project"
+msgstr ""
+
+#: views/emails/html/new-project.php:108
+#: views/emails/html/update-project.php:108
+msgid "Project Assignes"
+msgstr ""
+
+#: views/emails/html/new-task.php:7
+msgid "Your Message Subject or Title"
+msgstr ""
+
+#: views/emails/html/new-task.php:34
+msgid "assigned a task to you"
+msgstr ""
+
+#: views/emails/html/update-comment.php:36
+msgid " update comment on "
+msgstr ""
+
+#: views/emails/html/update-comment.php:76
+#: views/emails/html/update-message.php:69
+#: views/emails/html/update-project.php:58
+msgid "Updated at"
+msgstr ""
+
+#: views/emails/html/update-message.php:34
+msgid "update the discussion"
+msgstr ""
+
+#: views/emails/html/update-project.php:34
+msgid "update the project"
+msgstr ""
+
+#: views/emails/html/update-project.php:78
+#. translators: %1s: project title, %2s: project updated by name
+msgid "The project \"%1$s\" has been updated by %2$s"
+msgstr ""
+
+#: views/emails/html/update-task.php:33
+msgid "updated the task"
+msgstr ""
+
+#: views/project-switch/project-switch.php:11
+msgid " to navigate"
+msgstr ""
+
+#: views/project-switch/project-switch.php:15
+msgid " to select "
+msgstr ""
+
+#: views/project-switch/project-switch.php:19
+msgid "to dismiss"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Super Logistics"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Logistics plugin which creates internal and customer facing logistics app."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "BigTB"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://bigtb.com"
+msgstr ""
