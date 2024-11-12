@@ -12351,6 +12351,130 @@ button[data-v-ec9ecba0]:hover {
   -webkit-transition: 0s;
   transition: 0s;
 }
+.project-select-area {
+  padding-bottom: 20px;
+}
+.project-select-area .form-content-wrap {
+  display: flex;
+  align-items: baseline;
+}
+.project-select-area .form-content-wrap .button-primary {
+  margin-top: -1px;
+}
+.project-select-area .form-content-wrap .drop-down-wrap {
+  display: flex;
+  align-items: baseline;
+  z-index: 9;
+}
+.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down,
+.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down {
+  width: 250px;
+  min-height: auto;
+  margin-right: 8px;
+}
+.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down .multiselect__single,
+.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down .multiselect__single {
+  margin-bottom: 0;
+}
+.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down .multiselect__select,
+.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down .multiselect__select {
+  display: none;
+}
+.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down .multiselect__input,
+.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down .multiselect__input {
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  font-size: 14px;
+  vertical-align: baseline;
+  height: 0;
+}
+.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down .multiselect__element .multiselect__option,
+.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down .multiselect__element .multiselect__option {
+  font-weight: normal;
+  white-space: normal;
+  padding: 6px 12px;
+  line-height: 25px;
+  font-size: 14px;
+}
+.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down .multiselect__tags,
+.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down .multiselect__tags {
+  min-height: auto;
+  padding: 4px;
+  border-color: #ddd;
+  border-radius: 3px;
+  white-space: normal;
+}
+.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down .multiselect__tags .multiselect__tag,
+.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down .multiselect__tags .multiselect__tag {
+  margin-bottom: 0;
+  overflow: visible;
+  border-radius: 3px;
+  margin-top: 2px;
+}
+.fc-flat .fc-expander-space {
+  display: inline !important;
+}
+.fc-resource-area .fc-icon {
+  width: auto;
+  font-size: initial;
+  margin-top: -1%;
+  vertical-align: middle;
+}
+.pm-calender-page .project-select-area {
+  flex: 1;
+}
+.pm-calender-page .button-group {
+  display: flex;
+}
+.pm-calender-page .calendar-color-plate {
+  display: flex;
+  align-items: center;
+}
+.pm-calender-page .calendar-color-plate p {
+  display: flex;
+  align-items: center;
+}
+.pm-calender-page .calendar-color-plate .incomplete-task-color:before {
+  background: #61BD4F;
+  content: "";
+  margin: 0 5px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.pm-calender-page .calendar-color-plate .complete-task-color:before {
+  background: #0090D9;
+  content: "";
+  margin: 0 5px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.pm-calender-page .calendar-color-plate .outstanding-task-color:before {
+  background: #EB5A46;
+  content: "";
+  margin: 0 5px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.pm-calender-page .calendar-color-plate .milestone-color:before {
+  background: #32b1c8;
+  content: "";
+  margin: 0 5px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.pm-calender-page:hover .pm-project-module-content-overlay {
+  display: block;
+}
+
 @font-face {
   font-family: "e-icons";
   font-style: normal;
@@ -61694,132 +61818,49 @@ to {
   padding: 0 20px 0 0;
 }
 
-.e-subject {
-    color: red;
-}
 
-.project-select-area {
-  padding-bottom: 20px;
+
+.schedule-vue-sample .block-events.e-schedule .template-wrap {
+    width: 100%;
+    border: 2px solid red;
 }
-.project-select-area .form-content-wrap {
-  display: flex;
-  align-items: baseline;
+.schedule-vue-sample .block-events.e-schedule .e-vertical-view .e-resource-cells {
+    height: 58px;
 }
-.project-select-area .form-content-wrap .button-primary {
-  margin-top: -1px;
+.schedule-vue-sample .block-events.e-schedule .e-timeline-view .e-resource-left-td,
+.schedule-vue-sample .block-events.e-schedule .e-timeline-month-view .e-resource-left-td {
+    width: 170px;
 }
-.project-select-area .form-content-wrap .drop-down-wrap {
-  display: flex;
-  align-items: baseline;
-  z-index: 9;
+.schedule-vue-sample .block-events.e-schedule .e-resource-cells.e-child-node .employee-category,
+.schedule-vue-sample .block-events.e-schedule .e-resource-cells.e-child-node .employee-name {
+    padding: 5px
 }
-.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down,
-.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down {
-  width: 250px;
-  min-height: auto;
-  margin-right: 8px;
+.schedule-vue-sample .block-events.e-schedule .employee-image {
+    width: 45px;
+    height: 40px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
 }
-.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down .multiselect__single,
-.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down .multiselect__single {
-  margin-bottom: 0;
+.schedule-vue-sample .block-events.e-schedule .employee-name {
+    font-size: 13px;
 }
-.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down .multiselect__select,
-.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down .multiselect__select {
-  display: none;
+.schedule-vue-sample .block-events.e-schedule .employee-designation {
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
-.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down .multiselect__input,
-.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down .multiselect__input {
-  border: none;
-  box-shadow: none;
-  margin: 0;
-  font-size: 14px;
-  vertical-align: baseline;
-  height: 0;
+@media (max-width: 550px) {
+.e-schedule .e-day-view .employee-image {
+        display: none;
 }
-.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down .multiselect__element .multiselect__option,
-.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down .multiselect__element .multiselect__option {
-  font-weight: normal;
-  white-space: normal;
-  padding: 6px 12px;
-  line-height: 25px;
-  font-size: 14px;
+.e-schedule .e-day-view .employee-name {
+        font-size: 14px;
 }
-.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down .multiselect__tags,
-.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down .multiselect__tags {
-  min-height: auto;
-  padding: 4px;
-  border-color: #ddd;
-  border-radius: 3px;
-  white-space: normal;
+.e-schedule .e-day-view .employee-designation {
+        display: none;
 }
-.project-select-area .form-content-wrap .drop-down-wrap .users-drop-down .multiselect__tags .multiselect__tag,
-.project-select-area .form-content-wrap .drop-down-wrap .projects-drop-down .multiselect__tags .multiselect__tag {
-  margin-bottom: 0;
-  overflow: visible;
-  border-radius: 3px;
-  margin-top: 2px;
-}
-.fc-flat .fc-expander-space {
-  display: inline !important;
-}
-.fc-resource-area .fc-icon {
-  width: auto;
-  font-size: initial;
-  margin-top: -1%;
-  vertical-align: middle;
-}
-.pm-calender-page .project-select-area {
-  flex: 1;
-}
-.pm-calender-page .button-group {
-  display: flex;
-}
-.pm-calender-page .calendar-color-plate {
-  display: flex;
-  align-items: center;
-}
-.pm-calender-page .calendar-color-plate p {
-  display: flex;
-  align-items: center;
-}
-.pm-calender-page .calendar-color-plate .incomplete-task-color:before {
-  background: #61BD4F;
-  content: "";
-  margin: 0 5px;
-  width: 14px;
-  height: 14px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.pm-calender-page .calendar-color-plate .complete-task-color:before {
-  background: #0090D9;
-  content: "";
-  margin: 0 5px;
-  width: 14px;
-  height: 14px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.pm-calender-page .calendar-color-plate .outstanding-task-color:before {
-  background: #EB5A46;
-  content: "";
-  margin: 0 5px;
-  width: 14px;
-  height: 14px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.pm-calender-page .calendar-color-plate .milestone-color:before {
-  background: #32b1c8;
-  content: "";
-  margin: 0 5px;
-  width: 14px;
-  height: 14px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.pm-calender-page:hover .pm-project-module-content-overlay {
-  display: block;
 }
 
 .pm-activity[data-v-0555c2ca] {

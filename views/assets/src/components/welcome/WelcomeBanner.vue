@@ -39,7 +39,7 @@
     </section><!-- end banner section -->
 </template>
 <script>
-    import modal from '@components/common/modal.vue';
+    import Modal from '@components/common/modal.vue';
     export default {
         data () {
             return {
@@ -47,7 +47,7 @@
            }
        },
        components: {
-        'pm-modal': modal
+        'pm-modal': Modal
     }
 }
 </script>

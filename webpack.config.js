@@ -16,6 +16,11 @@ function resolve(dir) {
     return path.join(__dirname, './views/assets/', dir);
 }
 
+function resolveNode(dir){
+    console.log("Path - "+ dir +" - ", path.join(__dirname, dir));
+    return path.join(__dirname, dir);
+}
+
 // Plugins array
 const plugins = [
     new VueLoaderPlugin(), // Required for processing Vue files
@@ -29,7 +34,6 @@ const plugins = [
 // Webpack configuration
 module.exports = [
     {
-        mode: 'development',
         entry: {
             'assets/js/pm': './views/assets/src/start.js',
             'assets/js/library': './views/assets/src/helpers/library.js',
@@ -54,7 +58,9 @@ module.exports = [
                 '@router': resolve('src/router'),
                 '@store': resolve('src/store'),
                 '@src': resolve('src/'),
-                '@syncfusion': path.resolve(__dirname, 'node_modules/@syncfusion'),
+                '@node': resolveNode('node_modules'),
+                vue$: path.resolve('./node_modules/vue/dist/vue.esm.js')
+                // '@node': path.join(__dirname,'node_modules')
             }
         },
 
@@ -105,10 +111,8 @@ module.exports = [
                     ]
                 },
                 // CSS loader (with MiniCssExtractPlugin for extracting CSS)
-                
                 {
                     test: /\.css$/,
-                    sideEffects: true,
                     use: [
                         MiniCssExtractPlugin.loader,
                         {
@@ -117,7 +121,6 @@ module.exports = [
                                 importLoaders: 1,
                             },
                         },
-                        'style-loader'
                     ]
                 },
                 // Font files loader
@@ -129,9 +132,6 @@ module.exports = [
         },
 
         plugins: plugins,
-        stats: {
-            errorDetails: true
-          }
 
         // optimization: {
         //     splitChunks: {

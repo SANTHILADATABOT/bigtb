@@ -1,10 +1,12 @@
 <script>
 import PMCalender from '@components/calendar/pm-calender.vue';
+import ScheduleComponent from '@components/calendar/scheduler.vue';
 import UpgraderOverlay from '@components/upgrade/overlay.vue';
 
 export default {
   components: {
     PMCalender,
+    ScheduleComponent,
     UpgraderOverlay,
   },
   mounted: function(){
@@ -14,6 +16,7 @@ export default {
 </script>
 
 <template>
+  <div>
   <div id="pm-calender-page" class="pm-calender-page pm-wrap pm-front-end pm-calendar-wrap">
     <div id="icon-themes" class="icon32"><br/></div>
     <h2>{{ __( 'Calendar', 'wedevs-project-manager' ) }}</h2>
@@ -97,6 +100,10 @@ export default {
     <PMCalender />
     <UpgraderOverlay />
   </div>
+  <div id="schedule-import">
+    <ScheduleComponent></ScheduleComponent>
+  </div>
+</div>
 </template>
 
 <style lang="less">

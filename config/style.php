@@ -160,13 +160,14 @@ return [
             //'pm-const-style'
         ],
     ],
-    'pm-syncfusion' => [
-        'id'         => 'pm-syncfusion',
-        'url'        => plugin_dir_url( dirname( __FILE__ ) ) . 'views/assets/css/syncfusion/syncfusion.css',
-        'dependency' => false,
-        'path'       => $view_path . '/assets/css/syncfusion/syncfusion.css',
+    'pm' => [
+        'id'         => 'pm',
+        'url'        => plugin_dir_url( dirname( __FILE__ ) ) . 'views/assets/css/assets/js/pm.css',
+        'path'       => $view_path . 'assets/css/assets/js/pm.css',
+        'dependency' => [
+            //'pm-const-style'
+        ],
     ],
-
     'pm-style' => [
         'id'         => 'pm-style',
         'url'        => plugin_dir_url( dirname( __FILE__ ) ) . 'views/assets/css/style.css',
@@ -189,12 +190,12 @@ return [
             'pm-pretty-photo',
             'pm-tiptip',
             'pm-v-tooltip',
-            // 'pm-scheduler',
+            'pm-scheduler',
             'pm-daterangepicker',
             'pm-const-style',
             'pm-new-style',
             'pm-slicknav',
-            // 'pm-syncfusion'
+            'pm'
         ]
     ],
 ];

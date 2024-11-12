@@ -4,7 +4,6 @@ export default {
             loading: true,
         }
     },
-    
     methods: {
         /**
          * Insert categroy resource

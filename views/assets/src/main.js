@@ -8,40 +8,34 @@ import App from './App.vue'
 import '@helpers/common-components'
 import menuFix from '@helpers/menu-fix';
 
-// import ElementUI from '../../../node_modules/element-ui/types';
-// import ElementUI from 'element-ui/types';
 import ElementUI from 'element-ui';
-
 import '@assets/css/element-ui/theme-chalk/index.css';
-import locale from '../../../node_modules/element-ui/lib/locale/lang/en';
+import locale from 'element-ui/lib/locale/lang/en';
 
-import BootstrapVue from '../../../node_modules/bootstrap-vue/src';
+import BootstrapVue from 'bootstrap-vue';
 import '@assets/css/bootstrap/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 
-// import PrimeVue from '../../../node_modules/primevue/config';
 import PrimeVue from 'primevue/config';
-import Dialog from '../../../node_modules/primevue/dialog';
-import DataTable from '../../../node_modules/primevue/datatable';
-import Column from '../../../node_modules/primevue/column';
-import ColumnGroup from '../../../node_modules/primevue/columngroup';
-import Button from '../../../node_modules/primevue/button';
-import InputText from '../../../node_modules/primevue/inputtext';
-import Slider from '../../../node_modules/primevue/slider';
-import MultiSelect from '../../../node_modules/primevue/multiselect';
-import Calendar from '../../../node_modules/primevue/calendar';
-
+import Dialog from 'primevue/dialog';
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+import ColumnGroup from 'primevue/columngroup';
+import Button from 'primevue/button';
+import InputText from 'primevue/inputtext';
+import Slider from 'primevue/slider';
+import MultiSelect from 'primevue/multiselect';
+import Calendar from 'primevue/calendar';
 
 import "@assets/css/primevue/themes/bootstrap4-light-blue/theme.css"
 import "@assets/css/primevue/primevue.css"
 import "@assets/css/primevue/primeicons.css"
-import "@assets/css/syncfusion/syncfusion.css"
 
-import  {ScheduleComponent} from '../../../node_modules/@syncfusion/ej2-vue-schedule';//added on 28-10-2024
-import { registerLicense } from '../../../node_modules/@syncfusion/ej2-base';
-
-registerLicense('ORg4AjUWIQA/Gnt2UlhhQlVMfV5AQmFWfFN0QXNYdV92fldAcC0sT3RfQFliSH5RdkRiXn1feXRWQg=='); //trail key prabakaran@santhila.co
-// registerLicense('ORg4AjUWIQA/Gnt2UlhhQlVMfV5AQmBIYVp/TGpJfl96cVxMZVVBJAtUQF1hTX9SdkNjWH1ccXdURGheRes');
+// import {registerLicense } from "@syncfusion/ej2-base";
+// import { ScheduleComponent } from "@syncfusion/ej2-vue-schedule";
+//Trial License Key	:	ORg4AjUWIQA/Gnt2UlhhQlVMfV5AQmFWfFN0QXNYdV92fldAcC0sT3RfQFliSH5RdkRiXn1feXRWQg==
+// registerLicense("ORg4AjUWIQA/Gnt2UlhhQlVMfV5AQmFWfFN0QXNYdV92fldAcC0sT3RfQFliSH5RdkRiXn1feXRWQg==");
+import { ScheduleComponent, Day, Week, WorkWeek, Month, Agenda } from "@node/@syncfusion/ej2-vue-schedule";
 
 if (typeof Vue.observable !== 'function') {
 
@@ -66,12 +60,15 @@ Vue.component('InputText', InputText);
 Vue.component('Button', Button);
 Vue.component('Slider', Slider);
 Vue.component('MultiSelect', MultiSelect);
-// Vue.component('Calendar', Calendar);
-Vue.component('ScheduleComponent', ScheduleComponent);
+Vue.component('Calendar', Calendar);
 Vue.use(PrimeVue);
+Vue.component('ScheduleComponent', ScheduleComponent)
+Vue.component('Day', Day)
+Vue.component('Week', Week)
+Vue.component('WorkWeek', WorkWeek)
+Vue.component('Month', Month)
 
 window.pmBus = new Vue();
-
 Vue.config.devtools = true;
 
 /**
@@ -84,7 +81,7 @@ var PM_Vue = {
     render: t => t(App),
     ModuleMixins
 }
-
+console.log("PM_Vue => ", PM_Vue);
 Vue.mixin(Mixin);
 
 new Vue(PM_Vue);
@@ -94,8 +91,5 @@ menuFix('pm_projects');
 
 //Always load in the bottom of the code
 import '@helpers/underscore'
-import '@syncfusion/ej2-base/styles/material.css';
-// import '@syncfusion/ej2-vue-schedule/styles/material.css';
-import '@syncfusion/ej2-schedule/styles/material.css';
-import './test.css';
+
 
