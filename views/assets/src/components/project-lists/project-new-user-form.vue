@@ -49,7 +49,6 @@
             createUser () {
                 var self = this;
                 this.show_spinner = true;
-
                 self.httpRequest({
                     url: self.base_url + 'pm/v2/users',
                     method: 'POST',

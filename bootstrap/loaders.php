@@ -8,7 +8,7 @@ use WeDevs\PM\Core\WP\Frontend;
 
 function pm_load_configurations() {
     $files = glob( __DIR__ . "/../config/*.php" );
-
+    
     if ( $files === false ) {
         throw new RuntimeException( "Failed to glob for config files" );
     }

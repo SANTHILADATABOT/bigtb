@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.scheduleEvent = exports.holidayList = exports.quickInfoTemplateData = exports.resourceSampleData = exports.blockData = exports.waitingList = exports.hospitalData = exports.headerRowData = exports.roomData = exports.generateObject = exports.generateResourceData = exports.generateStaticEvents = exports.generateEvents = exports.getReminderEvents = exports.readonlyEventsData = exports.fifaEventsData = exports.resAirlinesData = exports.doctorData = exports.personalData = exports.companyData = exports.birthdayData = exports.holidayData = exports.resourceConferenceData = exports.resourceTeamData = exports.timelineResourceData = exports.resourceData = exports.doctorsEventData = exports.webinarData = exports.recurrenceData = exports.leaveData = exports.employeeEventData = exports.eventsData = exports.zooEventsData = exports.timelineData = exports.scheduleData = void 0;
+exports.scheduleEvent = exports.holidayList = exports.quickInfoTemplateData = exports.resourceSampleData = exports.blockData = exports.waitingList = exports.hospitalData = exports.headerRowData = exports.roomData = exports.generateObject =exports.generateformdataObject = exports.generateResourceData = exports.generateStaticEvents = exports.generateEvents = exports.getReminderEvents = exports.readonlyEventsData = exports.fifaEventsData = exports.resAirlinesData = exports.doctorData = exports.personalData = exports.companyData = exports.birthdayData = exports.holidayData = exports.resourceConferenceData = exports.resourceTeamData = exports.timelineResourceData = exports.resourceData = exports.doctorsEventData = exports.webinarData = exports.recurrenceData = exports.leaveData = exports.employeeEventData = exports.eventsData = exports.zooEventsData = exports.timelineData = exports.scheduleData = void 0;
 /**
  * Schedule datasource
  */
@@ -3915,8 +3915,8 @@ function generateResourceData(startId, endId, text) {
 }
 exports.generateResourceData = generateResourceData;
 function generateObject(start, end, isWeekDaysOnly) {
-    if (start === void 0) { start = new Date(2020, 6, 1).getTime(); }
-    if (end === void 0) { end = new Date(2022, 11, 31).getTime(); }
+    if (start === void 0) { start = new Date().getTime(); }
+    if (end === void 0) { end = new Date().getTime(); }
     if (isWeekDaysOnly === void 0) { isWeekDaysOnly = false; }
     var data = [];
     var names = [
@@ -3951,6 +3951,32 @@ function generateObject(start, end, isWeekDaysOnly) {
     return data;
 }
 exports.generateObject = generateObject;
+function generateformdataObject(getdata) {
+    var data = [];
+    getdata.forEach(element => {
+        if(element.Subject && element.Id)
+        {
+            data.push({
+                Id: Number(element.Id),
+                Subject: element.Subject,
+                StartTime:new Date(element.StartTime),
+                EndTime: new Date(element.EndTime),
+                IsAllDay: element.IsAllDay,
+                RecurrenceRule:element.RecurrenceRule,
+                DBID:Number(element.DBID),
+                Description:element.Description,
+                Location:element.Location,
+                CategoryColor: '#1aaa55',
+                RecurrenceID:element.RecurrenceID != 0 ? element.RecurrenceID : null,
+                OwnerId:Number(element.Id),
+                // recurrenceDates:element.recurrenceDates ?? null,
+            });
+        }
+    });
+    const fin = JSON.stringify(data, null, 2);
+    return JSON.parse(fin);
+}
+exports.generateformdataObject = generateformdataObject;
 exports.roomData = [
     {
         Id: 1,

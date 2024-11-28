@@ -709,7 +709,6 @@ function pm_get_file_download_url( $project_id, $user_id, $file_id ) {
 }
 
 function pm_get_list_url( $project_id, $list_id, $is_admin ) {
-
     $is_admin = $is_admin ? 'admin' : 'frontend';
     $pm_base  = pm_get_project_page( $is_admin );
     $list_url = $pm_base . '#/projects/' . $project_id . '/task-lists/' . $list_id;

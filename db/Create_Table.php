@@ -6,6 +6,7 @@ class PM_Create_Table {
 
         require_once ABSPATH . 'wp-admin/includes/upgrade.php';
         $this->create_project_table();
+        $this->create_calender_table();
         $this->create_tasks_table();
         $this->create_activity_table();
         $this->create_assignees_table();
@@ -162,7 +163,34 @@ class PM_Create_Table {
 
         dbDelta($sql);
     }
+    private function create_calender_table()
+    {
+        global $wpdb;
+        $table_name = $this->prefix() . 'pm_calender';
 
+        $sql = "CREATE TABLE IF NOT EXISTS {$table_name} (
+            `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+            `title` varchar(255) NOT NULL,
+            `location` text DEFAULT NULL,
+            `start_date` DATETIME NOT NULL,
+            `end_date` DATETIME NOT NULL,
+            `description` text DEFAULT NULL,
+            `resources` varchar(255) DEFAULT NULL,
+            `RecurrenceId` int(11) UNSIGNED DEFAULT NULL,
+            `RecurrenceRule` text DEFAULT NULL,
+             `user_id` int(11) UNSIGNED DEFAULT NULL,
+            `user_role` varchar(255) DEFAULT NULL,
+            `created_by` int(11) UNSIGNED DEFAULT NULL,
+            `updated_by` int(11) UNSIGNED DEFAULT NULL,
+            `created_at` DATETIME DEFAULT NULL,
+            `updated_at` DATETIME DEFAULT NULL ,
+            `allDay` ENUM('No', 'Yes') NOT NULL DEFAULT 'No',
+            `delete_status` ENUM('no', 'yes') NOT NULL DEFAULT 'no',
+            PRIMARY KEY (`id`)
+        ) DEFAULT CHARSET=utf8mb4;";
+
+        dbDelta($sql);
+    }
     public function create_tasks_table()
     {
         global $wpdb;

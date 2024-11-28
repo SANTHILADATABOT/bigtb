@@ -31,6 +31,10 @@ class Menu
         $submenu[$slug][] = ['All Tasks', self::$capability, "admin.php?page={$slug}#/all-tasks"];
         $submenu[$slug][] = ['Profitability', self::$capability, "admin.php?page={$slug}#/profitability"];
         $submenu[$slug][] = ['Reports', self::$capability, "admin.php?page={$slug}#/db-reports"];
+        // $submenu[$slug][] = ['Calendar123', self::$capability, "admin.php?page=vue-admin-setting-panel"];
+        // $submenu[$slug][] = ['Schedule', self::$capability, "admin.php?page={$slug}#/schedule"];
+        $submenu[$slug][] = ['Calendar', self::$capability, "admin.php?page={$slug}#/calendar"];
+
 
         $active_task = self::my_task_count();
         $mytask_text = sprintf('My Tasks %s',

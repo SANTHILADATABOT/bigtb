@@ -15,6 +15,10 @@ const isProduction = (process.env.NODE_ENV === 'production');
 function resolve(dir) {
     return path.join(__dirname, './views/assets/', dir);
 }
+function resolvePath(dir) {
+    console.log("path.join(__dirname, dir) => ", path.join(__dirname, dir));
+    return path.join(__dirname, dir);
+}
 
 // Plugins array
 const plugins = [
@@ -29,7 +33,7 @@ const plugins = [
 // Webpack configuration
 module.exports = [
     {
-        mode: 'development',
+        // mode: 'development',
         entry: {
             'assets/js/pm': './views/assets/src/start.js',
             'assets/js/library': './views/assets/src/helpers/library.js',
@@ -38,14 +42,22 @@ module.exports = [
             'assets/vendor/vue-fullscreen/vue-fullscreen.min': './views/assets/vendor/vue-fullscreen/vue-fullscreen.js',
         },
 
+        // output: {
+        //     path: path.resolve(__dirname, 'views'),
+        //     filename: '[name].js', // Keep separate output JS files
+        //     publicPath: '',
+        // },
+
         output: {
             path: path.resolve(__dirname, 'views'),
             filename: '[name].js', // Keep separate output JS files
             publicPath: '',
         },
-
+        externals: {
+            vue: 'Vue', // This assumes Vue is loaded globally as "Vue"
+        },
         resolve: {
-            extensions: ['.js', '.vue', '.json', '.css'],
+            extensions: ['.ts','.js', '.vue', '.json', '.css'],
             alias: {
                 '@assets': resolve(''),
                 '@components': resolve('src/components'),
@@ -54,8 +66,8 @@ module.exports = [
                 '@router': resolve('src/router'),
                 '@store': resolve('src/store'),
                 '@src': resolve('src/'),
-                '@syncfusion': path.resolve(__dirname, 'node_modules/@syncfusion'),
-            }
+                '@node': resolvePath('node_modules'),
+            },
         },
 
         module: {
@@ -63,12 +75,33 @@ module.exports = [
                 // Vue loader
                 {
                     test: /\.vue$/,
-                    loader: 'vue-loader',
+				loader: 'vue-loader',
+				options: {
+					esModule: true,
+					loaders: {
+						// Since sass-loader (weirdly) has SCSS as its default parse mode, we map
+						// the "scss" and "sass" values for the lang attribute to the right configs here.
+						// other preprocessors should work out of the box, no loader config like this necessary.
+						'scss': [
+							'vue-style-loader',
+							'css-loader',
+							'sass-loader'
+						],
+							'sass': [
+							'vue-style-loader',
+							'css-loader',
+							'sass-loader?indentedSyntax'
+						]
+					}
+					// other vue-loader options go here
+				}
+                },
+                {
+                    test: /\.ts$/,
+                    loader: 'ts-loader',
                     options: {
-                        // Use Babel loader for JS inside .vue files
-                        loaders: {
-                            js: 'babel-loader',
-                        }
+                        appendTsSuffixTo: [/\.vue$/],
+                        transpileOnly: true
                     }
                 },
                 // JS loader for regular .js files
@@ -91,35 +124,36 @@ module.exports = [
                     }
                 },
                 // Less loader (with MiniCssExtractPlugin for extracting CSS)
+                // {
+                //     test: /\.less$/,
+                //     use: [
+                //         MiniCssExtractPlugin.loader,
+                //         {
+                //             loader: 'css-loader',
+                //             options: {
+                //                 importLoaders: 1,
+                //             },
+                //         },
+                //         'less-loader'
+                //     ]
+                // },
                 {
-                    test: /\.less$/,
+                    test: /\.less$/,  // New rule for LESS files
                     use: [
-                        MiniCssExtractPlugin.loader,
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                importLoaders: 1,
-                            },
-                        },
+                        process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'vue-style-loader',
+                        'css-loader',
                         'less-loader'
                     ]
                 },
-                // CSS loader (with MiniCssExtractPlugin for extracting CSS)
-                
                 {
                     test: /\.css$/,
-                    sideEffects: true,
                     use: [
-                        MiniCssExtractPlugin.loader,
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                importLoaders: 1,
-                            },
-                        },
-                        'style-loader'
+                      process.env.NODE_ENV === 'production' 
+                        ? MiniCssExtractPlugin.loader 
+                        : 'style-loader', // Use style-loader for dev, MiniCssExtractPlugin for prod
+                      'css-loader'
                     ]
-                },
+                  },
                 // Font files loader
                 {
                     test: /\.(png|woff|woff2|eot|ttf|svg)$/,

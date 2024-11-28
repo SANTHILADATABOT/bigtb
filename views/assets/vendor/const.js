@@ -6,5 +6,4 @@ pm.Moment    = moment;
 pm.NProgress = NProgress;
 pm.Toastr    = toastr;
 
-
 pm.pmObject = {};

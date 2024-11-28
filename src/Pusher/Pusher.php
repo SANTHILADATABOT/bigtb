@@ -56,6 +56,7 @@ class Pusher {
 
     public function scripts() {
         $path = filemtime( pm_config('define.path') . '/src/Pusher/views/assets/vendor/pusher-v5.0.2.min.js' );
+      
         wp_enqueue_script( 'pm-pusher-library', pm_config('define.url') . 'src/Pusher/views/assets/vendor/pusher-v5.0.2.min.js', array('jquery'), $path, true );
         
         if ( isset( $_GET['page'] ) && $_GET['page'] == 'pm_projects' ) {

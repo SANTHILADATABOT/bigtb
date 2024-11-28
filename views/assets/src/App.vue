@@ -16,11 +16,13 @@
 <style>
 
 </style>
+<!-- <link href="https://cdn.syncfusion.com/ej2/20.3.47/material.css" rel="stylesheet"></link> -->
 <script>
     import Popup from '@components/upgrade/popup';
     import do_action from '@components/common/do-action.vue';
     import NewTaskForm from '@components/my-tasks/new-task.vue';
-
+    // import '@syncfusion/ej2-base/styles/material.css';
+    // import '@syncfusion/ej2-schedule/styles/material.css';
     export default {
         components: {
             'pop-up': Popup,

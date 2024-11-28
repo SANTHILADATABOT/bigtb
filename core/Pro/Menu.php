@@ -41,12 +41,12 @@ class Menu {
 //            $submenu['pm_projects'][] = array( __( 'Woo Project', 'wedevs-project-manager' ), self::$capability, 'admin.php?page=pm_projects#/woo-project' );
 //        }
 
-        $submenu['pm_projects'][] = array( __( 'Calendar', 'wedevs-project-manager' ), self::$capability, 'admin.php?page=pm_projects#/calendar' );
-        if ( pm_has_manage_capability() ) {
-            $submenu['pm_projects'][] = array( __( 'Progress', 'wedevs-project-manager' ), self::$capability, 'admin.php?page=pm_projects#/progress' );
-            $submenu['pm_projects'][] = array( __( 'Reports', 'wedevs-project-manager' ), self::$capability, 'admin.php?page=pm_projects#/reports' );
-            $submenu['pm_projects'][] = array( __( 'Modules', 'wedevs-project-manager' ), self::$capability, 'admin.php?page=pm_projects#/modules' );
-        }
+        // $submenu['pm_projects'][] = array( __( 'Calendar', 'wedevs-project-manager' ), self::$capability, 'admin.php?page=pm_projects#/calendar' );
+        // if ( pm_has_manage_capability() ) {
+        //     $submenu['pm_projects'][] = array( __( 'Progress', 'wedevs-project-manager' ), self::$capability, 'admin.php?page=pm_projects#/progress' );
+        //     $submenu['pm_projects'][] = array( __( 'Reports', 'wedevs-project-manager' ), self::$capability, 'admin.php?page=pm_projects#/reports' );
+        //     $submenu['pm_projects'][] = array( __( 'Modules', 'wedevs-project-manager' ), self::$capability, 'admin.php?page=pm_projects#/modules' );
+        // }
 
         add_action( 'admin_print_styles-' . $slug, array( $this, 'scripts' ) );
     }

@@ -10,6 +10,7 @@ import '@components/global-reports/router';
 import '@components/project/project-materials/router';
 import '@components/all-tasks/router';
 import '@components/calendar/router';
+import '@components/scheduler/router';
 import '@components/progress/router';
 
 import {general, email} from '@components/settings/router';

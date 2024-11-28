@@ -134,13 +134,11 @@ class Project_Controller {
     		$category = Category::where( 'categorible_type', 'project' )
 	    		->where( 'id', $category )
 	    		->first();
-
 	    	if ( $category ) {
 	    		$projects = $category->projects()->with('assignees');
 	    	} else {
 	    		$projects = Project::with('assignees');
 	    	}
-
     	} else {
     		$projects = Project::with('assignees');
     	}
@@ -149,7 +147,6 @@ class Project_Controller {
     					$q->where('user_id', $user_id );
     				});
     	}
-
     	return $projects;
     }
 

@@ -266,7 +266,64 @@ $pm_scripts = [
             'jquery-ui-autocomplete',
         ],
         'in_footer'  => true
-    ]
+    ],
+    'pm-ej2-base'=> [
+        'id'         => 'pm-ej2-base',
+        'url'        => plugin_dir_url( dirname( __FILE__ ) ) . 'node_modules/@syncfusion/ej2-base/dist/ej2-base.min.js',
+        'path'       => 'node_modules/@syncfusion/ej2-base/dist/ej2-base.min.js',
+        'dependency' => [],
+        'in_footer'  => true
+    ],
+    'pm-ej2-buttons'=> [
+        'id'         => 'pm-ej2-buttons',
+        'url'        => plugin_dir_url( dirname( __FILE__ ) ) . 'node_modules/@syncfusion/ej2-buttons/dist/ej2-buttons.min.js',
+        'path'       => 'node_modules/@syncfusion/ej2-buttons/dist/ej2-buttons.min.js',
+        'dependency' => [],
+        'in_footer'  => true
+    ],
+    'pm-ej2-calendars'=> [
+        'id'         => 'pm-ej2-calendars',
+        'url'        => plugin_dir_url( dirname( __FILE__ ) ) . 'node_modules/@syncfusion/ej2-calendars/dist/ej2-calendars.min.js',
+        'path'       => 'node_modules/@syncfusion/ej2-calendars/dist/ej2-calendars.min.js',
+        'dependency' => [],
+        'in_footer'  => true
+    ],
+    'pm-ej2-dropdowns'=> [
+        'id'         => 'pm-ej2-dropdowns',
+        'url'        => plugin_dir_url( dirname( __FILE__ ) ) . 'node_modules/@syncfusion/ej2-dropdowns/dist/ej2-dropdowns.min.js',
+        'path'       => 'node_modules/@syncfusion/ej2-dropdowns/dist/ej2-dropdowns.min.js',
+        'dependency' => [],
+        'in_footer'  => true
+    ],
+    'pm-ej2-inputs'=> [
+        'id'         => 'pm-ej2-inputs',
+        'url'        => plugin_dir_url( dirname( __FILE__ ) ) . 'node_modules/@syncfusion/ej2-inputs/dist/ej2-inputs.min.js',
+        'path'       => 'node_modules/@syncfusion/ej2-inputs/dist/ej2-inputs.min.js',
+        'dependency' => [],
+        'in_footer'  => true
+    ],
+    'pm-ej2-navigations'=> [
+        'id'         => 'pm-ej2-navigations',
+        'url'        => plugin_dir_url( dirname( __FILE__ ) ) . 'node_modules/@syncfusion/ej2-navigations/dist/ej2-navigations.min.js',
+        'path'       => 'node_modules/@syncfusion/ej2-navigations/dist/ej2-navigations.min.js',
+        'dependency' => [],
+        'in_footer'  => true
+    ],
+    'pm-ej2-popups'=> [
+        'id'         => 'pm-ej2-popups',
+        'url'        => plugin_dir_url( dirname( __FILE__ ) ) . 'node_modules/@syncfusion/ej2-popups/dist/ej2-popups.min.js',
+        'path'       => 'node_modules/@syncfusion/ej2-popups/dist/ej2-popups.min.js',
+        'dependency' => [],
+        'in_footer'  => true
+    ],
+    'pm-ej2-schedule' => [
+        'id'         => 'pm-ej2-schedule',
+        'url'        => plugin_dir_url( dirname( __FILE__ ) ) . 'node_modules/@syncfusion/ej2-vue-schedule/src/schedule/schedule.component.js',
+        // 'path'       => $view_path . '/assets/vendor/ej2-schedule/vue-scheduler.min.js',
+        'path'       => 'node_modules/@syncfusion/ej2-schedule/vue-scheduler.min.js',
+        'dependency' => ['pm-vue-library','pm-ej2-base','pm-ej2-buttons','pm-ej2-calendars','pm-ej2-dropdowns','pm-ej2-inputs','pm-ej2-popups','pm-ej2-navigations'],
+        'in_footer'  => false
+    ],  
 ];
 
 //if ( ( version_compare( $wp_version, '5.0', '<' ) ) || ! is_admin() ) {

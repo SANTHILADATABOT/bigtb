@@ -166,6 +166,19 @@ return [
         'dependency' => false,
         'path'       => $view_path . '/assets/css/syncfusion/syncfusion.css',
     ],
+    
+    'pm' => [
+        'id'         => 'pm',
+        'url'        => plugin_dir_url( dirname( __FILE__ ) ) . 'views/assets/css/assets/js/pm.css',
+        'dependency' => false,
+        'path'       => $view_path . '/assets/css/assets/js/pm.css',
+    ],
+    'pm-library' => [
+        'id'         => 'pm-library',
+        'url'        => plugin_dir_url( dirname( __FILE__ ) ) . 'views/assets/css/assets/js/library.css',
+        'dependency' => false,
+        'path'       => $view_path . '/assets/css/assets/js/library.css',
+    ],
 
     'pm-style' => [
         'id'         => 'pm-style',
@@ -194,7 +207,9 @@ return [
             'pm-const-style',
             'pm-new-style',
             'pm-slicknav',
-            // 'pm-syncfusion'
+            'pm-syncfusion',
+            'pm',
+            'pm-library'
         ]
     ],
 ];
